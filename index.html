@@ -14,14 +14,20 @@
             align-items: center;
             flex-direction: column;
             height: 100vh; /* Full viewport height */
+            padding: 10px; /* Prevent content from touching edges */
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 2rem; /* Adjust size based on device */
+            margin-bottom: 20px;
         }
         .image-container {
-            width: 700px;
-            height: 700px;
+            width: 90%; /* Responsive width */
+            max-width: 700px; /* Limit to a max size for larger screens */
+            height: auto;
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 1px solid #ccc; /* Optional: for visualization */
         }
         img {
             max-width: 100%;
@@ -30,7 +36,8 @@
         a {
             text-decoration: none;
             color: blue;
-            font-size: 3rem; /* Adjust font size here (e.g., 1.5rem = 24px) */
+            font-size: 1.2rem; /* Slightly larger font size for visibility */
+            margin-top: 15px;
         }
     </style>
 </head>
