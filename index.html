@@ -5,39 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anronash Solutions</title>
     <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
         body {
             text-align: center;
             font-family: Arial, sans-serif;
-            margin: 0;
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
-            height: 100vh; /* Full viewport height */
-            padding: 10px; /* Prevent content from touching edges */
-            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Full viewport height */
+            padding: 10px;
+            background-color: #f9f9f9; /* Optional: Light background */
         }
+
+        /* Header Styling */
         h1 {
-            font-size: 2rem; /* Adjust size based on device */
+            font-size: 2.5rem; /* Scales based on device */
             margin-bottom: 20px;
+            color: #333;
         }
+
+        /* Image Container Styling */
         .image-container {
-            width: 90%; /* Responsive width */
-            max-width: 700px; /* Limit to a max size for larger screens */
+            width: 90%; /* Take up 90% of the screen width */
+            max-width: 700px; /* Limit width on larger devices */
             height: auto;
             display: flex;
             justify-content: center;
             align-items: center;
         }
+
+        /* Image Styling */
         img {
-            max-width: 100%;
-            height: auto;
+            max-width: 100%; /* Scale image width proportionally */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Optional: Rounded corners for aesthetics */
         }
+
+        /* Link Styling */
         a {
             text-decoration: none;
-            color: blue;
-            font-size: 1.2rem; /* Slightly larger font size for visibility */
+            color: #007bff;
+            font-size: 1.5rem; /* Slightly larger for visibility */
             margin-top: 15px;
+            display: inline-block; /* Allows for margin adjustments */
+        }
+
+        /* Responsive Adjustments */
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 3rem; /* Larger font for tablets and up */
+            }
+            a {
+                font-size: 1.7rem; /* Larger link font on bigger screens */
+            }
+        }
+
+        @media (min-width: 1024px) {
+            h1 {
+                font-size: 3.5rem; /* Even larger font for desktops */
+            }
         }
     </style>
 </head>
