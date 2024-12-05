@@ -4,12 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anronash Solutions</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh; /* Full viewport height */
+        }
+        .image-container {
+            width: 700px;
+            height: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc; /* Optional: for visualization */
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
 </head>
-<body style="text-align: center; font-family: Arial, sans-serif;">
+<body>
     <h1>Welcome to Anronash Solutions</h1>
-    <div style="width: 700px; height: 700px;">
-  <img src="Logo.png" alt="Landing Page Image" style="max-width: 100%; height: auto;">
-</div>
-    <p><a href="https://www.linkedin.com/in/shashikumar/?originalSubdomain=in" target="_blank" style="text-decoration: none; color: blue;">Visit us on LinkedIn</a></p>
+    <div class="image-container">
+        <img src="Logo.png" alt="Landing Page Image">
+    </div>
+    <p><a href="https://www.linkedin.com/in/shashikumar/?originalSubdomain=in" target="_blank">Visit us on LinkedIn</a></p>
 </body>
 </html>
